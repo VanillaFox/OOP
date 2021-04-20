@@ -19,8 +19,7 @@ class Document {
 	public:
 		AddAction(size_t n, std::shared_ptr<Figure> f) : position(n), fig(f) {}
 		void Action(Document& doc) override {
-			doc.Add(position, fig);
-			doc.actions.pop();	
+			doc.Add(position, fig);	
 		}
 	};
 
